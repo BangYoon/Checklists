@@ -14,6 +14,7 @@
 		4054A6EC248E4AA700E4D7AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4054A6EB248E4AA700E4D7AA /* Assets.xcassets */; };
 		4054A6EF248E4AA700E4D7AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4054A6ED248E4AA700E4D7AA /* LaunchScreen.storyboard */; };
 		4054A70C248E5D0700E4D7AA /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054A70B248E5D0700E4D7AA /* ChecklistItem.swift */; };
+		40DDB0C4249327F000E8B539 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DDB0C3249327F000E8B539 /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4054A6EE248E4AA700E4D7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4054A6F0248E4AA700E4D7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4054A70B248E5D0700E4D7AA /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		40DDB0C3249327F000E8B539 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				4054A6E4248E4AA600E4D7AA /* SceneDelegate.swift */,
 				4054A6E6248E4AA600E4D7AA /* ChecklistViewController.swift */,
 				4054A70B248E5D0700E4D7AA /* ChecklistItem.swift */,
+				40DDB0C3249327F000E8B539 /* AddItemViewController.swift */,
 				4054A6E8248E4AA600E4D7AA /* Main.storyboard */,
 				4054A6EB248E4AA700E4D7AA /* Assets.xcassets */,
 				4054A6ED248E4AA700E4D7AA /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40DDB0C4249327F000E8B539 /* AddItemViewController.swift in Sources */,
 				4054A6E7248E4AA600E4D7AA /* ChecklistViewController.swift in Sources */,
 				4054A6E3248E4AA600E4D7AA /* AppDelegate.swift in Sources */,
 				4054A6E5248E4AA600E4D7AA /* SceneDelegate.swift in Sources */,
