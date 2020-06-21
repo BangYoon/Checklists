@@ -68,11 +68,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the Item" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vwF-8J-48q">
-                                                    <rect key="frame" x="20" y="4" width="374" height="34"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the Item" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vwF-8J-48q">
+                                                    <rect key="frame" x="20" y="4" width="344" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="done" destination="Hpx-qZ-Cg1" eventType="editingDidEndOnExit" id="zyq-2K-7Vd"/>
+                                                        <outlet property="delegate" destination="Hpx-qZ-Cg1" id="775-Lh-Xse"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -91,13 +95,14 @@
                                 <action selector="cancel" destination="Hpx-qZ-Cg1" id="tkY-x1-OAN"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="iuy-AH-Xt9">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="iuy-AH-Xt9">
                             <connections>
                                 <action selector="done" destination="Hpx-qZ-Cg1" id="FZM-ZP-dqv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="doneBarButton" destination="iuy-AH-Xt9" id="wXy-7q-G8n"/>
                         <outlet property="textField" destination="vwF-8J-48q" id="fqI-Tj-hYc"/>
                     </connections>
                 </tableViewController>
